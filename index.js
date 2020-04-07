@@ -8,7 +8,8 @@ const productsRouter = require('./routes/products');
 const cartsRouter = require('./routes/carts');
 
 const app = express();
-const PORT = 3000 || process.env.PORT;
+
+const PORT = process.env.PORT;
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
