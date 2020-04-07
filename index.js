@@ -24,4 +24,6 @@ app.use(productsAdminRouter);
 app.use(productsRouter);
 app.use(cartsRouter);
 
-app.listen(PORT);
+app.listen(PORT, () => {
+	console.log(PORT);
+});
